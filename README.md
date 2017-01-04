@@ -17,9 +17,14 @@ The server will print the message once it has received all of it.
 
 HOW IT WORKS:
 Client is programmed to send messages in the format:
+  
   message size in bytes~message
+
 Example:
+  
   12~Hello World!
+  
+  
 The Client sends the size first, 
 the server receives size integers until the sentinel character '~' is received, 
 then the server receives bytes until bytes received equals the size.
